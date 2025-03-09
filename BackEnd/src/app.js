@@ -9,8 +9,6 @@ app.use(cors())
  app.use(express.json())
 
 
-
-
 app.get('/',(req,res)=>{
     res.send('hello world')
 })
@@ -20,4 +18,4 @@ app.use('/ai',aiRoutes)
 
  module.exports = app
 
- //com
+ 
