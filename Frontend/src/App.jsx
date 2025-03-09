@@ -55,16 +55,10 @@ const [loder,setloder] = useState(false)
             onClick={reviewCode}
             className="review">Review</div>
         </div>
-        {/* <div className="right">
-          <Markdown
-
-            rehypePlugins={[ rehypeHighlight ]}
-
-          >{review}</Markdown>
-        </div> */}
+        
         <div className="right">
           {loder ? (
-            <div className="loader">Loading...</div> // Loader shown while fetching data
+            <div className="loader">Loading...</div> 
           ) : (
             <Markdown rehypePlugins={[ rehypeHighlight ]}>
               {review}
