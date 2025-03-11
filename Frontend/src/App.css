@@ -62,24 +62,34 @@ main .right {
   overflow: auto;
 }
 
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    padding: 1rem;
+    overflow: hidden; /* Prevents unwanted scrolling */
+  }
 
-/* .loader {
-  width: 50px;
-  height: 50px;
-  border: 5px solid #f3f3f3; /* Light gray */
-  border-top: 5px solid #3498db; /* Blue */
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
+  main .left,
+  main .right {
+    flex-basis: auto;
+    width: 100%;
+    height: auto;
+    overflow: hidden; /* Ensures no internal scrolling */
+  }
 
-  /* Center the loader */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  main .left {
+    min-height: 300px; /* Ensures the left section has a proper height */
+  }
+
+  main .right {
+    padding: 1rem;
+    overflow-y: auto; /* Allows scrolling only inside right div if needed */
+    max-height: 60vh; /* Prevents excessive height */
+  }
+
+  html, body {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+  }
 }
 
-/* Keyframes for spinning animation */
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-} */
 
