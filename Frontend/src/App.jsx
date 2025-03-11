@@ -12,7 +12,12 @@ function App() {
   
   const [ code, setCode ] = useState(` function sum() {
   return 1 + 1
-}`)
+}
+
+
+// Submit Your Code for AI Evaluation
+
+`)
 
 const [loder,setloder] = useState(false)
 
