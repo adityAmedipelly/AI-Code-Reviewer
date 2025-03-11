@@ -33,6 +33,7 @@ const [loder,setloder] = useState(false)
 
   return (
     <>
+       <h2 className="mobile-heading">Code Editor</h2>
       <main>
         <div className="left">
           <div className="code">
