@@ -66,7 +66,7 @@ main .right {
   main {
     flex-direction: column;
     padding: 1rem;
-    overflow: hidden; /* Prevents unwanted scrolling */
+    overflow: hidden; 
   }
 
   main .left,
@@ -74,21 +74,21 @@ main .right {
     flex-basis: auto;
     width: 100%;
     height: auto;
-    overflow: hidden; /* Ensures no internal scrolling */
+    overflow: hidden;
   }
 
   main .left {
-    min-height: 300px; /* Ensures the left section has a proper height */
+    min-height: 300px; 
   }
 
   main .right {
     padding: 1rem;
-    overflow-y: auto; /* Allows scrolling only inside right div if needed */
-    max-height: 60vh; /* Prevents excessive height */
+    overflow-y: auto; 
+    max-height: 60vh; 
   }
 
   html, body {
-    overflow-x: hidden; /* Prevents horizontal scrolling */
+    overflow-x: hidden; 
   }
 }
 
