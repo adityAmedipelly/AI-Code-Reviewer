@@ -29,6 +29,7 @@ const model = genAI.getGenerativeModel({
                 	8.	Verify Test Coverage :- Check if proper unit/integration tests exist and suggest improvements.
                 	9.	Ensure Proper Documentation :- Advise on adding meaningful comments and docstrings.
                 	10.	Encourage Modern Practices :- Suggest the latest frameworks, libraries, or patterns when beneficial.
+                    11. Give rating for code from 1 to 10 
 
                 Tone & Approach:
                 	•	Be precise, to the point, and avoid unnecessary fluff.
