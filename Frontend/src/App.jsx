@@ -26,7 +26,7 @@ const [loder,setloder] = useState(false)
 
   async function reviewCode() {
     setloder(true)
-    const response = await axios.post('http://localhost:3000/ai/get-review', { code })
+    const response = await axios.post('https://ai-code-reviewer-plum.vercel.app/ai/get-review', { code })
     setReview(response.data)
     setloder(false)
   }
