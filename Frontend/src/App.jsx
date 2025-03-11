@@ -33,7 +33,7 @@ const [loder,setloder] = useState(false)
 
   return (
     <>
-       <h2 className="mobile-heading">Code Editor</h2>
+       <h3 className="mobile-heading">Get AI Code Feedback </h3>
       <main>
         <div className="left">
           <div className="code">
